@@ -18,8 +18,6 @@ public class MainLinkedList {
 		my.show();
 		System.out.println(my.getLength());
 		my.addIndex("JON", 33, 3);
-		;
-		my.addMiddle("MARINA", 25);
 		my.show();
 		System.out.println(my.getLength());
 	}

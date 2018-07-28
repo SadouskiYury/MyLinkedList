@@ -48,27 +48,6 @@ public class LinkedList {
 		++this.length;
 	}
 
-	public void addMiddle(String name, int age) {
-		Node node = new Node(name, age);
-		if (isEmprty()) {
-			first = node;
-		} else {
-			current = first;
-			for (int i = 1; i < this.length; i++) {
-				if (i == this.length / 2) {
-					node.next = current;
-					node.prev = current.prev;
-					current.prev = node;
-
-					break;
-				}
-				current = current.next;
-			}
-
-		}
-		++this.length;
-	}
-
 	public void addIndex(String name, int age, int k) {
 		Node node = new Node(name, age);
 		if (isEmprty()) {
